@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namoz Vaxtlari</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <span class="logo">
+        <img src="./logo_new.png" alt="logo" width="80px" height="80px">
+        <h1>Namoz Vaqtlari</h1>
+    </span>
+    <select id="region" onchange="fetchPrayerTimes()">
+        <option value="Toshkent">Tashkent</option>
+        <option value="Buxoro">Bukhara</option>
+        <option value="Samarqand">Samarkand</option>
+        <option value="Xiva">Khiva</option>
+    </select>
+    </nav>
+    </header>
+    <main>
+        <div class="prayer-times">
+            <h2>Today's Prayer Times</h2>
+            <table>
+                <tr>
+                    <th>Prayer</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Fajr</td>
+                    <td id="bomdod">04:30 AM</td>
+                </tr>
+                <tr>
+                    <td>Dhuhr</td>
+                    <td id="peshin">12:15 PM</td>
+                </tr>
+                <tr>
+                    <td>Asr</td>
+                    <td id="asr">03:45 PM</td>
+                </tr>
+                <tr>
+                    <td>Maghrib</td>
+                    <td id="shom">06:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Isha</td>
+                    <td id="xufton">08:00 PM</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p><strong> &copy; 2024 Namoz Vaqtlari. </strong></p>
+        <p>Manba: «Book Media Nashr» nashriyoti tomonidan chop etilgan 2023–2024 milodiy, 1445 hijriy-qamariy yil taqvim kitobi.
+            <br>Barcha huquqlar himoyalangan.
+            Saytdan ma'lumot olinganda manba ko'rsatilishi shart.</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
